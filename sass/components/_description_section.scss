@@ -1,0 +1,41 @@
+.description-section {
+  display: none;
+  padding-top: 0;
+
+  @include desk {
+    display: block;
+  }
+}
+
+.description-title {
+  margin: 0 auto 50px auto;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.description-list {
+  justify-content: space-between;
+}
+
+.description-list__wrap {
+  width: 370px;
+  height: 294px;
+  position: relative;
+}
+
+.description-list__title {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  padding: 27px 0;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $secondary-text-color;
+}

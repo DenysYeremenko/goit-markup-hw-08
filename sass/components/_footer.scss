@@ -1,0 +1,256 @@
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  align-items: baseline;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  @include desk {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.adress-location {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include desk {
+    display: inline-block;
+    text-align: none;
+  }
+}
+
+.adress-list {
+  display: block;
+  text-align: center;
+
+  @include desk {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.adress-list__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress-list__contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $adress-third-priority-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-list__contact,
+.adress-location {
+  &:hover,
+  &:focus {
+    color: $main-hover-color;
+  }
+}
+
+.footer-wrap-1 {
+  & > a {
+    display: block;
+    text-align: center;
+  }
+
+  @include tab {
+    margin-left: 76px;
+  }
+
+  @include desk {
+    text-align: left;
+    margin-left: 0;
+    & > a {
+      text-align: left;
+    }
+  }
+}
+
+.footer-wrap-2 {
+  @include tab {
+    margin-left: 165px;
+  }
+
+  @include desk {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+}
+
+.footer-wrap-3 {
+  @include tab {
+    display: flex;
+    max-width: 738px;
+    margin: 0 auto;
+  }
+}
+
+.footer-links-title {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+
+  @include tab {
+    margin-top: 0;
+  }
+
+  @include desk {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.footer-links__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: $secondary-text-color;
+  background-color: $footer-links-bcgr-color;
+  border-radius: 50%;
+  transition-property: background-color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-links__icon {
+  &:hover,
+  &:focus {
+    background-color: $main-hover-color;
+    fill: $secondary-text-color;
+  }
+}
+
+.newsletter-form {
+  @include desk {
+    height: 80px;
+    margin-left: 93px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.newsletter-form__label {
+  text-align: center;
+  display: block;
+  margin: 60px 0 0 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+
+  @include desk {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.newsletter-form__input {
+  display: block;
+
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 0 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2196f300;
+
+  @include tab {
+    max-width: 450px;
+    margin: 20px auto 0 auto;
+  }
+
+  @include desk {
+    display: inline-block;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+.newsletter-form__input {
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+  }
+}
+
+.newsletter-form__submit-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: $secondary-text-color;
+  cursor: pointer;
+
+  @include desk {
+    display: inline-block;
+  }
+}
+
+.newsletter-form__submit-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-form__icon-submit {
+  margin-left: 10px;
+}

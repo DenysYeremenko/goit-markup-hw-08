@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $body-main-color;
+}
+
+footer {
+  background-color: $main-background-color;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.list-flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @include mob {
+    width: 480px;
+  }
+
+  @include tab {
+    width: 768px;
+  }
+
+  @include desk {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
