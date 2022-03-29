@@ -20,12 +20,18 @@
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @include tab {
     max-width: 354px;
     flex-basis: calc((100%-2 * 30) / 2);
     margin-left: 30px;
     margin-top: 30px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   @include desk {
@@ -60,7 +66,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include desk {
+  @include tab {
     text-align: left;
   }
 }

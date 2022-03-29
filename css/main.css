@@ -899,6 +899,10 @@ footer {
   margin-right: auto;
 }
 
+.skills-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .skills-list__item {
     max-width: 354px;
@@ -906,6 +910,9 @@ footer {
         flex-basis: calc((100%-2 * 30) / 2);
     margin-left: 30px;
     margin-top: 30px;
+  }
+  .skills-list__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -951,7 +958,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .skills-list__title {
     text-align: left;
   }
